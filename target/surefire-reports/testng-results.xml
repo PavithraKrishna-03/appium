@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Surefire suite" duration-ms="27" started-at="2023-03-30T13:46:54 IST" finished-at="2023-03-30T13:46:54 IST">
+    <groups>
+    </groups>
+    <test name="Surefire test" duration-ms="27" started-at="2023-03-30T13:46:54 IST" finished-at="2023-03-30T13:46:54 IST">
+      <class name="Demo_appium.Demo_appium.AppTest">
+        <test-method status="PASS" signature="shouldAnswerWithTrue()[pri:0, instance:Demo_appium.Demo_appium.AppTest@1dfe2924]" name="shouldAnswerWithTrue" duration-ms="4" started-at="2023-03-30T13:46:54 IST" finished-at="2023-03-30T13:46:54 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldAnswerWithTrue -->
+      </class> <!-- Demo_appium.Demo_appium.AppTest -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>

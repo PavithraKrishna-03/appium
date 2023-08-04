@@ -8,7 +8,7 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.annotations.BeforeSuite;
 
-import com.google.common.collect.ImmutableMap;
+//import com.google.common.collect.ImmutableMap;
 
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
@@ -27,7 +27,7 @@ public class Appium_setup {
 			dprop.load(input); */
 			DesiredCapabilities c = new DesiredCapabilities();
 			
-			c.setCapability("deviceName", "SM-E236B/DS");
+		/*	c.setCapability("deviceName", "SM-E236B/DS");
 			c.setCapability("udid", "RZCTA0ZLSSJ");
 			System.out.println("launchingggg111......");
 		//	c.setCapability("deviceName", "OPPO A54");
@@ -47,9 +47,9 @@ public class Appium_setup {
 			driver = new AndroidDriver<MobileElement>(u, c);	
 			System.out.println("App is getting launch");
 			//	Report_Details.method_Screenshot("Splash screen", Report_Details.takeScreenShot());
-			driver.manage().timeouts().implicitlyWait(80, TimeUnit.SECONDS);
+			driver.manage().timeouts().implicitlyWait(80, TimeUnit.SECONDS);  
 			
-			//ph_number1=dprop.getProperty("MOB");
+			//ph_number1=dprop.getProperty("MOB"); */
 		} catch (Exception e) {
 			e.printStackTrace();
 		}

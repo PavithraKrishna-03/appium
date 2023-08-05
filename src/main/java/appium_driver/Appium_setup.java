@@ -26,25 +26,25 @@ public class Appium_setup {
 			input = new FileInputStream("config.properties");
 			dprop.load(input); */
 			DesiredCapabilities c = new DesiredCapabilities();
-			
-		/*	c.setCapability("deviceName", "SM-E236B/DS");
+			c.setCapability("deviceName", "M-E236B/DS");
 			c.setCapability("udid", "RZCTA0ZLSSJ");
-			System.out.println("launchingggg111......");
-		//	c.setCapability("deviceName", "OPPO A54");
-		//	c.setCapability("udid", "UCTG99E67DG6BAT8");
+			c.setCapability("autoGrantPermissions", "true");
 			c.setCapability("platformName", "Android");
 			c.setCapability("platformVersion", "13");
-			c.setCapability("autoGrantPermissions", "true");
-		  //  c.setCapability("appium:chromeOptions", ImmutableMap.of("w3c", false));
-		    c.setCapability("adbExecTimeout", 50000);
-		    c.setCapability("NewCommandTimeout", 50000); 
-		 //   c.setCapability("showChromedriverLog", true);
+			  c.setCapability("adbExecTimeout", 50000);
+			    c.setCapability("NewCommandTimeout", 50000); 
 			c.setCapability("appPackage", "com.sec.android.app.popupcalculator");
 			System.out.println("launchingggg......");
-		//	c.setCapability("appActivity", "in.loanfront.android.splash.SplashActivity");		
 			URL u = new URL("http://127.0.1.1:4723/wd/hub");
 			System.out.println("launchingggg333......");
 			driver = new AndroidDriver<MobileElement>(u, c);	
+		
+
+		  //  c.setCapability("appium:chromeOptions", ImmutableMap.of("w3c", false));
+		  
+		 //   c.setCapability("showChromedriverLog", true);
+		
+		//	c.setCapability("appActivity", "in.loanfront.android.splash.SplashActivity");		
 			System.out.println("App is getting launch");
 			//	Report_Details.method_Screenshot("Splash screen", Report_Details.takeScreenShot());
 			driver.manage().timeouts().implicitlyWait(80, TimeUnit.SECONDS);  

@@ -8,6 +8,8 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.annotations.BeforeSuite;
 
+import com.google.common.collect.ImmutableMap;
+
 //import com.google.common.collect.ImmutableMap;
 
 import io.appium.java_client.AppiumDriver;
@@ -28,12 +30,14 @@ public class Appium_setup {
 			DesiredCapabilities c = new DesiredCapabilities();
 			c.setCapability("deviceName", "M-E236B/DS");
 			c.setCapability("udid", "RZCTA0ZLSSJ");
-			c.setCapability("autoGrantPermissions", "true");
 			c.setCapability("platformName", "Android");
 			c.setCapability("platformVersion", "13");
 			  c.setCapability("adbExecTimeout", 50000);
 			    c.setCapability("NewCommandTimeout", 50000); 
+				c.setCapability("autoGrantPermissions", "true");
+			    c.setCapability("appium:chromeOptions", ImmutableMap.of("w3c", false));
 			c.setCapability("appPackage", "com.sec.android.app.popupcalculator");
+			c.setCapability("appActivity", "com.sec.android.app.popupcalculator.Calculator");
 			System.out.println("launchingggg......");
 			URL u = new URL("http://127.0.1.1:4723/wd/hub");
 			System.out.println("launchingggg333......");

@@ -35,6 +35,7 @@ public class Appium_setup {
 			  c.setCapability("adbExecTimeout", 50000);
 			    c.setCapability("NewCommandTimeout", 50000); 
 				c.setCapability("autoGrantPermissions", "true");
+				c.setCapability("showChromedriverLog", true);
 			    c.setCapability("appium:chromeOptions", ImmutableMap.of("w3c", false));
 			c.setCapability("appPackage", "com.sec.android.app.popupcalculator");
 			c.setCapability("appActivity", "com.sec.android.app.popupcalculator.Calculator");
@@ -43,12 +44,6 @@ public class Appium_setup {
 			System.out.println("launchingggg333......");
 			driver = new AndroidDriver<MobileElement>(u, c);	
 		
-
-		  //  c.setCapability("appium:chromeOptions", ImmutableMap.of("w3c", false));
-		  
-		 //   c.setCapability("showChromedriverLog", true);
-		
-		//	c.setCapability("appActivity", "in.loanfront.android.splash.SplashActivity");		
 			System.out.println("App is getting launch");
 			//	Report_Details.method_Screenshot("Splash screen", Report_Details.takeScreenShot());
 			driver.manage().timeouts().implicitlyWait(80, TimeUnit.SECONDS);  

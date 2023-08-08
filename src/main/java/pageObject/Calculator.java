@@ -47,6 +47,6 @@ public class Calculator extends Appium_setup{
 		plus.click();
 		Thread.sleep(2000);
 		one.click();
-		//return this;
+	
 	} 
 }
